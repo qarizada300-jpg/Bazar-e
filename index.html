@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>بازار لاجورد | فروشگاه محصولات افغانستان</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="logo" href="#home">بازار لاجورد</a>
+      <nav aria-label="منوی اصلی">
+        <a href="#home" data-p="home">خانه</a>
+        <a href="#products" data-p="products">محصولات</a>
+        <a href="#cart" data-p="cart">سبد خرید<span class="badge" id="count">0</span></a>
+        <a href="#about" data-p="about">درباره ما</a>
+        <a href="#delivery" data-p="delivery">ارسال و پرداخت</a>
+        <a href="#contact" data-p="contact">تماس</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- 1. خانه -->
+    <section class="page" id="page-home">
+      <div class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">اصالت افغانستان، انتخابی با اطمینان</span>
+          <h1>از دل افغانستان، تا درِ خانهٔ شما</h1>
+          <p>کشمش هرات، زعفران، قالین دست‌باف و سنگ‌های لاجورد بدخشان؛ همه را از تولیدکنندگان اصلی می‌خریم و با قیمت
+            روشن می‌فروشیم.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#products">دیدن محصولات</a>
+            <a class="btn alt" href="#about">دربارهٔ ما</a>
+          </div>
+        </div>
+        <div class="showcase" aria-label="نمایش تصاویر محصولات و هنر افغانستان">
+          <div class="slider" id="heroSlider" aria-roledescription="carousel" aria-label="تصاویر بازار لاجورد">
+            <div class="slides">
+              <figure class="slide is-active"><img src="assets/img1.jpg" alt="تصویر اول از محصولات و هنر افغانستان"
+                  loading="eager">
+                <figcaption>گنجینه‌های اصیل افغانستان</figcaption>
+              </figure>
+              <figure class="slide"><img src="assets/img2.jpg" alt="تصویر دوم از محصولات و هنر افغانستان" loading="lazy">
+                <figcaption>طعم طبیعی سرزمین ما</figcaption>
+              </figure>
+              <figure class="slide"><img src="assets/img3.jpg" alt="تصویر سوم از محصولات و هنر افغانستان" loading="lazy">
+                <figcaption>هنر دست‌های پرتلاش</figcaption>
+              </figure>
+              <figure class="slide"><img src="assets/img4.jpg" alt="تصویر چهارم از محصولات و هنر افغانستان" loading="lazy">
+                <figcaption>لاجورد؛ رنگ ماندگار افغانستان</figcaption>
+              </figure>
+              <figure class="slide"><img src="assets/img5.jpg" alt="تصویر پنجم از محصولات و هنر افغانستان" loading="lazy">
+                <figcaption>از تولیدکننده تا خانهٔ شما</figcaption>
+              </figure>
+            </div>
+            <button class="slider-arrow prev" type="button" aria-label="تصویر قبلی">&#10094;</button>
+            <button class="slider-arrow next" type="button" aria-label="تصویر بعدی">&#10095;</button>
+            <div class="slider-footer">
+              <div class="slider-dots" role="group" aria-label="انتخاب تصویر">
+                <button class="dot is-active" type="button" aria-label="نمایش تصویر ۱" aria-pressed="true"></button>
+                <button class="dot" type="button" aria-label="نمایش تصویر ۲" aria-pressed="false"></button>
+                <button class="dot" type="button" aria-label="نمایش تصویر ۳" aria-pressed="false"></button>
+                <button class="dot" type="button" aria-label="نمایش تصویر ۴" aria-pressed="false"></button>
+                <button class="dot" type="button" aria-label="نمایش تصویر ۵" aria-pressed="false"></button>
+              </div><span class="slide-count" id="slideCount">۰۱ / ۰۵</span>
+            </div>
+          </div>
+          <div class="showcase-note"><span class="note-mark">✦</span><span>انتخاب‌شده با عشق به سرزمین ما</span></div>
+        </div>
+      </div>
+      <h2>پرفروش‌ترین‌ها</h2>
+      <div class="grid" id="featured"></div>
+      <div class="strip">
+        <div>
+          <h3>تازه و اصل</h3>
+          <p class="muted">خرید مستقیم از باغ‌داران و صنعتگران ولایت‌ها.</p>
+        </div>
+        <div>
+          <h3>ارسال به ولایت‌ها</h3>
+          <p class="muted">کابل، هرات، مزار شریف، قندهار، جلال‌آباد و دیگر شهرها.</p>
+        </div>
+        <div>
+          <h3>پرداخت هنگام تحویل</h3>
+          <p class="muted">اول محصول را ببینید، بعد پول بدهید.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. محصولات -->
+    <section class="page" id="page-products">
+      <h1>محصولات</h1>
+      <p class="muted">یک دسته را انتخاب کنید یا همه را ببینید.</p>
+      <div class="cats" id="cats" role="group" aria-label="دسته‌بندی"></div>
+      <div class="grid" id="list"></div>
+    </section>
+
+    <!-- 3. سبد خرید -->
+    <section class="page" id="page-cart">
+      <h1>سبد خرید</h1>
+      <div id="cartBox"></div>
+    </section>
+
+    <!-- 4. درباره ما -->
+    <section class="page" id="page-about">
+      <h1>دربارهٔ بازار لاجورد</h1>
+      <p>بازار لاجورد از یک دکان کوچک در شهر نو کابل شروع شد. هدف ما ساده است: محصولات اصیل افغانستان را با قیمت منصفانه
+        به مردم برسانیم و درآمد را به دست تولیدکننده نزدیک‌تر کنیم.</p>
+      <p>ما با باغ‌داران هرات و کندهار، زعفران‌کاران، قالین‌بافان شمال و سنگ‌تراشان بدخشان کار می‌کنیم. هر محصول پیش از
+        فروش بررسی می‌شود.</p>
+      <div class="strip">
+        <div>
+          <h3>۲۰۰+</h3>
+          <p class="muted">محصول از ولایت‌های مختلف</p>
+        </div>
+        <div>
+          <h3>۴۰</h3>
+          <p class="muted">همکار تولیدکننده</p>
+        </div>
+        <div>
+          <h3>۷ روز</h3>
+          <p class="muted">مهلت بازگشت کالا</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ارسال و پرداخت -->
+    <section class="page" id="page-delivery">
+      <h1>ارسال و پرداخت</h1>
+      <ol class="steps">
+        <li>محصول را به سبد اضافه کنید و فرم تماس را پر کنید.</li>
+        <li>همکار ما برای تأیید آدرس و زمان تحویل زنگ می‌زند.</li>
+        <li>سفارش در کابل ظرف ۱ تا ۲ روز و در ولایت‌ها ظرف ۳ تا ۶ روز می‌رسد.</li>
+        <li>پول را هنگام تحویل نقد بپردازید، یا از طریق حواله و کیف پول موبایلی.</li>
+      </ol>
+      <h2>ارسال رایگان</h2>
+      <p>سفارش‌های بالاتر از ۳٬۰۰۰ افغانی در کابل رایگان ارسال می‌شوند.</p>
+      <h2>بازگشت کالا</h2>
+      <p>اگر محصول با توضیح مطابقت نداشت، تا ۷ روز می‌توانید آن را برگردانید.</p>
+    </section>
+
+    <!-- 6. تماس -->
+    <section class="page" id="page-contact">
+      <h1>تماس با ما</h1>
+      <p class="muted">آدرس: کابل، شهر نو، چهارراهی صدارت (نمونه) — شنبه تا پنج‌شنبه، ۸ صبح تا ۶ عصر.</p>
+      <form id="form" novalidate>
+        <label>نام<input id="n" autocomplete="name" required></label>
+        <label>شمارهٔ تماس<input id="t" type="tel" inputmode="tel" autocomplete="tel" placeholder="07xxxxxxxx"
+            required></label>
+        <label>پیام<textarea id="m" rows="4" required></textarea></label>
+        <button class="btn" type="submit">ارسال پیام</button>
+        <div class="msg" id="fmsg" role="status"></div>
+      </form>
+    </section>
+
+  </main>
+  <footer>
+    <div class="wrap">© ۱۴۰۵ بازار لاجورد، افغانستان</div>
+  </footer>
+
+  <script src="Scripts/main.js"></script>
+  <script src="Scripts/motion.js"></script>
+</body>
+
+</html>
